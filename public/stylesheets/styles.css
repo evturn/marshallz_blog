@@ -30,11 +30,13 @@ h2 {
 
 .miniuser{
   display: inline-block;
-  color: white;
+  color: navy;
   width: 10em;
   height: 10em;
-  border: 1px solid black;
+  border: 2px solid black;
   overflow: hidden;
+  font-family: calibri;
+  font-weight: bold;
 }
 
 .miniuser img{
