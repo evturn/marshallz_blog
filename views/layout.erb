@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Blog</title>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/styles.css">
+</head>
+<body>
+	<center>
+			<% if session[:current_user] %>
+    <form action="/sessions" method='post'>
+      <input type="hidden" name='_method' value='delete'>
+      <input type="submit" value='bLog-Out'>
+    </form>
+
+    <form action="/profiles">
+      <input type="submit" value ='Profile'>
+    </form>
+    
+	  <% else %>
+	    <a href="/users/new">Joyn</a>
+	    <a href="/sessions/new">bLogin</a>
+	  <% end %>
+		<a href="/"><h1>mARSHALLZ bLOG</h1></a>
+	</center>
+
+		<%= yield %>
+</body>
+</html>

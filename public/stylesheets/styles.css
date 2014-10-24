@@ -1,0 +1,50 @@
+body {
+	background-image: url(http://inspiringplay.com/wp-content/gallery/kids-inclusive-play-drawings/inspiring-play-pascal-playground-drawing_0.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	color: grey;
+	
+
+}
+
+h1 {
+	font-family: calibri;
+	font-size: 60px;
+	text-shadow: -10px 10px 0px #00e6e6,
+                 -20px 20px 0px #01cccc,
+                 -30px 30px 0px #00bdbd;
+}
+
+h2 {
+  font-family: calibri;
+  font-size: 40px;
+  text-shadow: -10px 10px 0px #00e6e6,
+                 -20px 20px 0px #01cccc,
+                 -30px 30px 0px #00bdbd;
+}
+
+.container {
+	float: left;
+	margin: 10px;
+}
+
+.miniuser{
+  display: inline-block;
+  color: white;
+  width: 10em;
+  height: 10em;
+  border: 1px solid black;
+  overflow: hidden;
+}
+
+.miniuser img{
+  color: white;
+  float: right;
+  width: 7em;
+}
+
+span {
+  color: red;
+  font-size: 70px;
+  font-family: impact;
+}

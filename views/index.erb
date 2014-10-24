@@ -1,0 +1,18 @@
+
+
+<div class="container">
+	<ul>
+		<% @entries.each do |entry| %>
+			<li>
+				<ul>
+					<%= entry.title %>
+						<li>
+					<%= entry.body %>
+						</li>
+						<a href="/entries/edit">Edit</a>
+						<a href="/"
+				</ul>	
+			</li>
+		<% end %>
+	</ul>
+</div>
