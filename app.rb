@@ -3,7 +3,8 @@ Bundler.require
 
 enable :sessions
 
-# 
+# **** helpers ****
+require_relative 'helpers/app_helper'
 
 
 
@@ -63,4 +64,15 @@ end
 delete '/entries' do
   session[:current_user] = user.id
   Entry.delete
+end
+
+get '/entries/edit' do
+  authenticate!
+  @entries = Entry.find(params[:entry_id])
+
+  erb
+end
+
+patch '/entries' do
+  authenticate!
 end
