@@ -8,6 +8,18 @@ body {
 
 }
 
+.button {
+  appearance: button;
+        -moz-appearance: button;
+        -webkit-appearance: button;
+        text-decoration: none;
+        font-family: calibri; 
+        color: white;
+        display: inline-block; 
+        padding: 2px 8px;
+        float: right;
+}
+
 h1 {
 	font-family: calibri;
 	font-size: 60px;
@@ -24,10 +36,29 @@ h2 {
                  -30px 30px 0px #00bdbd;
 }
 
-.container {
-	float: left;
-	margin: 10px;
+h3 {
+  font-family: calibri;
+  font-size: 30px;
 }
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  font-family: calibri;
+  font-size: 20px;
+}
+
+.container {
+	width: 650px;
+  margin: auto;
+  padding: 0px;
+  clear: both;
+  display: block;
+  color: black;
+ 
+  }
 
 .miniuser{
   display: inline-block;
