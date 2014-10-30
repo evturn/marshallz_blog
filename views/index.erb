@@ -5,24 +5,16 @@
 		<% @entries.each do |entry| %>
 			<li>
 				<ul>
-					<h3><%= entry.title %></h3>
+					<div class="entry">
+					<h3>
+						<a href="/entries/<%= entry.id %>"><%= entry.title.upcase %></a>
+					</h3>
 						<li>
-					<%= entry.body %>
+							<%= entry.body %>
 						</li>
-						</ul>	
+					</div>
+				</ul>	
 			</li>
-							<div class="button" >
-								<form action="/entries" method='post'>
-		      				<input type="hidden" name='_method' value='patch'>
-		      				<input type="submit" value='EDIT'>
-		    				</form>
-								
-								<form action="/entries" method='post'>
-		      				<input type="hidden" name='_method' value='delete'>
-		      				<input type="submit" value='DELETE'>
-		    				</form>
-    					</div>
-				
 		<% end %>
 	</ul>
 </div>

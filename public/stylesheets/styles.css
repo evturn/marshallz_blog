@@ -2,13 +2,43 @@ body {
 	background-image: url(http://inspiringplay.com/wp-content/gallery/kids-inclusive-play-drawings/inspiring-play-pascal-playground-drawing_0.jpg);
 	background-repeat: no-repeat;
 	background-size: 100%;
-	color: grey;
+	color: white;
   background-attachment:fixed;
 
 }
 
 div form {
-    display: inline-block;
+  display: inline-block;
+}
+
+.title {
+  display: block;
+  width: 500px;
+}
+
+.wide {
+  display: block;
+  width: 500px;
+  height: 200px;
+}
+
+.large {
+  display: block;
+
+}
+
+input[type="text"]
+{
+    font-family: calibri;
+    font-size: 40px;
+    color: black;
+}
+
+input[type="password"]
+{
+    font-family: calibri;
+    font-size: 40px;
+    color: black;
 }
 
 
@@ -24,7 +54,7 @@ input {
       inset 0 0 8px  rgba(0,1,0,0.1),
             0 0 16px rgba(0,1,0,0.1); 
     padding: 15px;
-    background: rgba(255,255,255,0.5);
+    background: #FEFAEB;
     margin: 0 0 10px 0;
 }
 .button {
@@ -35,38 +65,66 @@ input {
         font-family: calibri; 
         color: white;
         display: inline-block; 
-        padding: 2px 8px;
+        padding: 8px 8px;
         float: right;
+        margin: 0 auto;
+        
 }
 
 h1 {
 	font-family: calibri;
-	font-size: 60px;
-	text-shadow: -10px 10px 0px #00e6e6,
-                 -20px 20px 0px #01cccc,
-                 -30px 30px 0px #00bdbd;
+	font-size: 100px;
+  color: white;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  
+
+              
 }
 
 h2 {
   font-family: calibri;
   font-size: 40px;
-  text-shadow: -10px 10px 0px #00e6e6,
-                 -20px 20px 0px #01cccc,
-                 -30px 30px 0px #00bdbd;
+  color: white;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+
 }
 
 h3 {
   font-family: calibri;
   font-size: 30px;
+  color: white;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
+
+a {
+  color: white;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  text-decoration: none;
 }
 
 ul {
   list-style-type: none;
+  color: white;
+
 }
 
 li {
   font-family: calibri;
   font-size: 20px;
+  color: white;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+ 
+}
+
+.entry {
+  margin: 10px;
+  padding: 20px;
+
 }
 
 .container {
@@ -75,7 +133,8 @@ li {
   padding: 0px;
   clear: both;
   display: block;
-  color: black;
+  color: white;
+
  
   }
 
@@ -90,14 +149,12 @@ li {
   font-weight: bold;
 }
 
-.miniuser img{
+.miniuser img {
   color: white;
   float: right;
   width: 7em;
 }
 
 span {
-  color: red;
-  font-size: 70px;
-  font-family: impact;
+  color: red
 }

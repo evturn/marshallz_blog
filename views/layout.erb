@@ -8,13 +8,12 @@
 <body>
 	<center>
 		<% if session[:current_user] %>
-    	<%= erb :'/_nav_user' %>
+    	<%= erb :'_nav_user' %>
 	  <% else %>
-			<%= erb :'/_nav_non_user' %>
+			<%= erb :'_nav_non_user' %>
 	  <% end %>
 
-
-		<a href="/"><h1>mARSHALLZ bLOG</h1></a>
+		<a href="/"><h1>mARSHALL'<span>z</span> bLOG</h1></a>
 	</center>
 
 		<%= yield %>

@@ -1,0 +1,11 @@
+<center>
+	<h2>EDIT</h2>
+		<form action="/entries/<%= @entry.id %>" method="post">
+			<input type="hidden" name="_method" value="patch">
+				<input class="title" name="entry[title]" value="<%= @entry.title %>">
+				<input class="wide" name="entry[body]" value="<%= @entry.body %>">
+					<div class="button">
+				<input type="submit" value="UPDATE">
+					</div>
+		</form>
+</center>

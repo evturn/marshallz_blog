@@ -1,0 +1,21 @@
+<div class="container">
+	<ul>
+		<h3>
+			<%= @entry.title %>
+		</h3>
+			<li>
+				<%= @entry.body %>
+			</li>
+	</ul>
+	<div class="button" >
+		<form action="/entries/<%= @entry.id %>/edit" method='get'>
+			<input type="hidden" name="entry_id" value="<%= @entry.id %>">
+			<input type="submit" value='EDIT'>
+		</form>
+		<form action="/entries" method='post'>
+			<input type="hidden" name="entry_id" value="<%= @entry.id %>">
+			<input type="hidden" name='_method' value='delete'>
+			<input type="submit" value='DELETE'>
+		</form>
+	</div>
+</div>
