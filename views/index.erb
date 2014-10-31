@@ -1,16 +1,19 @@
-
-
 <div class="container">
 	<ul>
 		<% @entries.each do |entry| %>
 			<li>
 				<ul>
 					<div class="entry">
-					<h3>
-						<a href="/entries/<%= entry.id %>"><%= entry.title.upcase %></a>
-					</h3>
+						<div class="title-av" >
+								<img src="<%= entry.user.avatar %>" class="avatar" >
+						<h3>
+							<a href="/entries/<%= entry.id %>"><%= entry.title.upcase %></a>
+						</h3>
+						</div>
 						<li>
 							<%= entry.body %>
+							<br>
+							<h4>Written by: <%= entry.user.username %></h4>
 						</li>
 					</div>
 				</ul>	
@@ -18,3 +21,4 @@
 		<% end %>
 	</ul>
 </div>
+

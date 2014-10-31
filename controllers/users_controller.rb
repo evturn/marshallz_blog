@@ -8,7 +8,7 @@ class UsersController < ApplicationController
     user.password = params[:password]
     user.save!
     session[:current_user] = user.id
-    redirect "/users/profiles"
+    redirect "/"
   end
 
   get '/profiles' do

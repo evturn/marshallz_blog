@@ -14,13 +14,10 @@ class ApplicationController < Sinatra::Base
   enable :sessions, :method_override
 
   get '/' do
+    
     @entries = Entry.all
     erb :index
   end
 
-  get '/welcome' do
-
-    erb :'users/welcome'
-  end
 
 end

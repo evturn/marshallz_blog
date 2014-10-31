@@ -10,11 +10,12 @@ class SessionsController < ApplicationController
       session[:current_user] = user.id
       redirect '/'
     else
-      redirect '/users/new'
+      redirect '/'
     end
   end
 
   delete '/' do
+    authenticate!
     session[:current_user] = nil
     redirect '/'
   end

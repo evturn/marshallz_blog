@@ -2,20 +2,19 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>mArshall</title>
+	<title>MARSHALLZ BLOG</title>
+	<link href='http://fonts.googleapis.com/css?family=Monofett' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="/stylesheets/styles.css">
 </head>
 <body>
 	<center>
+		<a href="/"><h1 class="header">MARSHALL'<span>Z</span> bL0G</h1></a>
 		<% if session[:current_user] %>
     	<%= erb :'_nav_user' %>
 	  <% else %>
 			<%= erb :'_nav_non_user' %>
 	  <% end %>
-
-		<a href="/"><h1>mARSHALL'<span>z</span> bL0G</h1></a>
-	</center>
-
+		</center>
 		<%= yield %>
 </body>
 </html>
