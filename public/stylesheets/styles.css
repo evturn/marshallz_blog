@@ -160,7 +160,8 @@ li {
   margin: 10px;
   padding: 20px;
   background: rgba(255, 255, 255, 0.3);
-  border: 2px solid black;
+  border: 6px solid black;
+  border-radius: 5px;
 
 }
 
@@ -171,7 +172,11 @@ li {
   clear: both;
   display: block;
   color: white;
+}
 
+.center {
+  position: center;
+}
  
   }
 
